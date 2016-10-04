@@ -361,7 +361,7 @@
 
                 // Create a map object, and include the MapTypeId to add
                 // to the map type control.
-                var $latlng = new google.maps.LatLng(29.198351, -81.028046),
+                var $latlng = new google.maps.LatLng(39.9632427,-86.2724681),
                     $mapOptions = {
                         zoom: 13,
                         center: $latlng,
