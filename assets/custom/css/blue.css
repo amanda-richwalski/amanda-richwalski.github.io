@@ -779,7 +779,7 @@ figure {
     opacity: 1.0; }
   figure figcaption {
     padding: 1.0em;
-    color: #303030;
+    color: #eaeaea;
     text-transform: uppercase;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
@@ -834,7 +834,7 @@ figure.effect-goliath .popup-call {
       font-size: 24px;
       margin-left: 2px; }
     figure.effect-goliath .popup-call a i:hover {
-      color: #E84855; }
+      color: #eaeaea; }
 figure.effect-goliath figcaption {
   position: absolute;
   top: 0;
@@ -849,7 +849,7 @@ figure.effect-goliath figcaption {
     right: 30px;
     bottom: 30px; }
   figure.effect-goliath figcaption a {
-    color: #303030;
+    color: #eaeaea;
     font-size: 11px;
     line-height: 20px; }
   figure.effect-goliath figcaption span {
