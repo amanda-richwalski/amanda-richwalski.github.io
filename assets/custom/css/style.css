@@ -761,7 +761,7 @@ section {
     margin-left: 0;
     margin-right: 0; }
     .grid .row .grid-item {
-      border: none; }
+      border: 0; }
 
 .grid {
   -webkit-transition-property: height, width;
@@ -1348,7 +1348,7 @@ blockquote {
 
 .owl-nav {
   font-family: "FontAwesome";
-  font-size: 24px;
+  font-size: 50px;
   position: absolute;
   display: block;
   top: 46%;

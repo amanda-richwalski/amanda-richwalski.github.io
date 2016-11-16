@@ -355,7 +355,7 @@
                     }
                 ];
 
-                // Create a new StyledMapType object, passing it the array of styles,
+                 //Create a new StyledMapType object, passing it the array of styles,
                 // as well as the name to be displayed on the map type control.
                 var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
 
@@ -393,11 +393,11 @@
         })();
 
         // Dropdown on Hover
-        // $('.navbar .dropdown').hover(function() {
-        //     $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-        // }, function() {
-        //     $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
-        // });
+         $('.navbar .dropdown').hover(function() {
+             $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+         }, function() {
+             $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+         });
 
 
     });
