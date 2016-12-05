@@ -1610,7 +1610,9 @@ blockquote {
   padding-left: 0; }
 
 #wrapper.sidebar-left.toggled {
-  padding-left: 300px; }
+  padding-left: 300px; 
+  padding-left: 300px;
+}
 
 .sidebar-left #sidebar-wrapper {
   z-index: 901;
