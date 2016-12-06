@@ -14,6 +14,8 @@
 
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+
+
 	<!-- JS -->
 
 
@@ -113,10 +115,10 @@
 	</div>
 	</div>
 
-	
+
 		
 <div class="col-lg-12 text-center">
-<div id="carousel-example-generic" class="carousel slide center-block" data-ride="carousel" data-interval="3000" style="width: 900px">
+<div id="carousel-example-generic" class="carousel slide center-block" data-ride="carousel" style="width: 900px">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -238,33 +240,14 @@
 
 <!-- Custom scripts -->
 
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.carousel').carousel({
+            interval : 3000
+        });
 
-<script>
-   $(function() {
-	
-      // Cycles to the previous item
-      $(".prev-slide").click(function() {
-         $(".carousel").carousel('prev');
-      });
-      
-      // Cycles to the next item
-      $(".next-slide").click(function() {
-         $(".carousel").carousel('next');
-      });
-      
-      // Cycles the carousel to a particular frame 
-      $(".slide-one").click(function() {
-         $(".carousel").carousel(0);
-      });
-      
-      $(".slide-two").click(function() {
-         $(".carousel").carousel(1);
-      });
-      
-      $(".slide-three").click(function() {
-         $(".carousel").carousel(2);
-      });
-   });
+	    $('.carousel').carousel('cycle');
+});	
 </script>
 
 
