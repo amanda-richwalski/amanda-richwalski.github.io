@@ -240,7 +240,7 @@
 
 <!-- Custom scripts -->
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(document).ready(function () {
 	$('.carousel').carousel({
             interval : 3000
@@ -248,9 +248,16 @@ $(document).ready(function () {
 
 	    $('.carousel').carousel('cycle');
 });	
+</script>-->
+
+<script type="text/javascript">
+$(document).ready(function () {
+  function playcarousel(){
+    $('.carousel-control.right').trigger('click');
+  } 
+  window.setInterval(playcarousel, 4000); 
+});
 </script>
-
-
 
 
 </body>
