@@ -116,7 +116,7 @@
 	
 		
 <div class="col-lg-12 text-center">
-<div id="carousel-example-generic" class="carousel slide center-block" data-ride="carousel" style="width: 900px">
+<div id="carousel-example-generic" class="carousel slide center-block" data-ride="carousel" data-interval="3000" style="width: 900px">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -128,7 +128,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/_dqkwdydhua-tamara-bellis.jpg" alt="fashion">
+      <img src="img/dqkwdydhua-tamara-bellis.jpg" alt="fashion">
       <!--<div class="carousel-caption">
       	<h3>Caption Text</h3>
       </div>-->
@@ -211,7 +211,7 @@
 
 
 <!-- JS -->
-<script src="assets/vendor/jquery/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<!--<script src="assets/vendor/jquery/js/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/vendor/animatedheader/js/classie.js"></script>
 <script src="assets/vendor/animatedheader/js/cbpAnimatedHeader.min.js"></script>
@@ -233,16 +233,20 @@
 <script type="text/javascript" src="assets/vendor/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
 <script type="text/javascript" src="assets/vendor/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 <script type="text/javascript" src="assets/vendor/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="assets/vendor/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="assets/vendor/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>-->
 
 
 <!-- Custom scripts -->
 
 
-<script>
-	$('.carousel').carousel({
-		interval: 4000
-	})
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".next-slide").click(function(){
+		$('.carousel').carousel('next')({
+			slidesToScroll: -1,
+		
+	});
+});
 </script>
 
 
