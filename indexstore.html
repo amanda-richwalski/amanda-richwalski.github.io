@@ -150,7 +150,7 @@
   <!-- Controls -->
  
   <a class="carousel-control left" href="#carousel-example-generic" role="button" data-slide="next">
-    <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+    <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 
    <a class="carousel-control right" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -239,18 +239,33 @@
 <!-- Custom scripts -->
 
 
-<script type="text/javascript">
-$(document).ready(function(){
-	$(".next-slide").click(function(){
-		$('.carousel').carousel('next')({
-			slidesToScroll: -1,
-		
-	});
-});
+<script>
+   $(function() {
+	
+      // Cycles to the previous item
+      $(".prev-slide").click(function() {
+         $(".carousel").carousel('prev');
+      });
+      
+      // Cycles to the next item
+      $(".next-slide").click(function() {
+         $(".carousel").carousel('next');
+      });
+      
+      // Cycles the carousel to a particular frame 
+      $(".slide-one").click(function() {
+         $(".carousel").carousel(0);
+      });
+      
+      $(".slide-two").click(function() {
+         $(".carousel").carousel(1);
+      });
+      
+      $(".slide-three").click(function() {
+         $(".carousel").carousel(2);
+      });
+   });
 </script>
-
-
-
 
 
 
